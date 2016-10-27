@@ -1,3 +1,5 @@
 The NaXin is a IM tools based on the LAN, which support the Text chat, Send Files, Audio call, Video call.
 
-Author: zhuo_hf@foxmail.com
+It's a old project which be created in 2013. 
+
+Just for making a backup here.
