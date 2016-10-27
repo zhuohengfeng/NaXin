@@ -1,0 +1,71 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="main_tab_bottom">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingLeft">9.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">2.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    
+    <style name="Dialog_style" parent="android:Theme.Dialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item> 
+    </style>
+
+    
+    
+    <!-- 以下是setting界面的效果 -->
+   <style name="leba_bg_layout">
+       	<item name="android:orientation">horizontal</item>
+       	<item name="android:background">@drawable/leba_shape_bg</item>
+       	<item name="android:layout_width">fill_parent</item>
+      	<item name="android:layout_height">wrap_content</item>
+       	<item name="android:layout_marginLeft">8.0dip</item>
+       	<item name="android:layout_marginTop">10.0dip</item>
+       	<item name="android:layout_marginRight">8.0dip</item>   
+   </style>
+    
+   <style name="leba_bg_base_layout">
+       	<item name="android:orientation">horizontal</item>
+       	<item name="android:layout_width">fill_parent</item>
+      	<item name="android:layout_height">wrap_content</item>
+      	<item name="android:gravity">center_vertical</item>
+       	<item name="android:paddingTop">16.0dip</item>
+       	<item name="android:paddingBottom">16.0dip</item>
+       	<item name="android:focusable">true</item>
+       	<item name="android:clickable">true</item>   
+   </style>
+       
+   <style name="leba_bg_top_layout" parent="@style/leba_bg_base_layout">      
+       	<item name="android:background">@drawable/leba_bg_top_selector</item>
+   </style>
+                                   
+   
+   <style name="leba_bg_mid_layout" parent="@style/leba_bg_base_layout">
+       	<item name="android:background">@drawable/leba_bg_mid_selector</item> 
+   </style>
+                    
+   
+   <style name="leba_bg_bottom_layout" parent="@style/leba_bg_base_layout">
+       	<item name="android:background">@drawable/leba_bg_bottom_selector</item> 
+   </style>
+   
+    <style name="leba_bg_single_layout" parent="@style/leba_bg_base_layout">
+       	<item name="android:background">@drawable/leba_bg_single_selector</item>  
+    </style>   
+    
+</resources>

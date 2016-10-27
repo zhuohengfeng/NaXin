@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <android.support.v4.view.ViewPager
+        android:persistentDrawingCache="animation"
+        android:id="@+id/main_viewpager"
+        android:layout_gravity="center"
+		android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+
+        
+        <RadioGroup 
+            android:id="@+id/RaidoGroup"
+            android:background="@drawable/bottom_bar"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+        	android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_alignParentBottom="true"
+        	android:layout_alignParentLeft="true">
+            <RadioButton
+                android:id="@+id/radioButton1"
+                style="@style/main_tab_bottom"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_weixin"
+                android:text="@string/chat_tab" />
+
+            <RadioButton
+                android:drawableTop="@drawable/tab_address"
+                style="@style/main_tab_bottom"
+                android:id="@+id/radioButton2"
+                android:text="@string/address_tab" />
+
+            <RadioButton
+                android:drawableTop="@drawable/tab_find_frd"
+                style="@style/main_tab_bottom"
+                android:id="@+id/radioButton3"
+                android:text="@string/friends_tab" />
+
+            <RadioButton
+                android:drawableTop="@drawable/tab_settings"
+                style="@style/main_tab_bottom"
+                android:id="@+id/radioButton4"
+                android:text="@string/setting_tab" />
+            
+        </RadioGroup>
+
+</RelativeLayout>

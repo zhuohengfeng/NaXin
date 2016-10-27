@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar1" >
+
+        <Button
+            android:id="@+id/login_title_return_bn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/login_title_return_bn"
+            android:text="@string/title_return"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/login_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/login_title_return_bn"
+            android:layout_alignBottom="@+id/login_title_return_bn"
+            android:layout_centerHorizontal="true"
+            android:text="@string/login"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/login_img_logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/login"
+        android:src="@drawable/ic_launcher" />
+
+    <EditText
+        android:id="@+id/login_tx_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/login_img_logo"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/input_username" />
+
+    <GridView
+        android:background="#DADADADA"
+        android:padding="0dp"
+        android:id="@+id/login_gridView"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/login_tx_username"
+        android:layout_below="@+id/login_tx_username"
+        android:verticalSpacing="5dp"  
+        android:horizontalSpacing="5dp"  
+        android:layout_marginTop="18dp"
+        android:numColumns="4" >
+    </GridView>
+
+    <Button
+        android:id="@+id/login_bt_login"
+        android:layout_marginBottom="15dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_bt_login"
+        android:text="@string/login" />
+
+</RelativeLayout>

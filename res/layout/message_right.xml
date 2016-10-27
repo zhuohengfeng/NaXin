@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:padding="4dp">
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:orientation="vertical" 
+	        android:gravity="center_horizontal">
+	
+	        <TextView
+	            android:id="@+id/msg_sendtime"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"/>
+	        
+	    </LinearLayout>
+	
+        
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="5dp" >
+ 				
+ 				<TextView 
+	            android:id="@+id/msg" 
+	            android:layout_toLeftOf="@+id/msg_img"
+	            android:layout_marginLeft="10dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/chatto_bg_normal" 
+	          	/>   
+	                 
+	                  
+	            <TextView 
+	            android:id="@+id/msg_name" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/msg_img"
+	            android:layout_alignParentRight="true"
+	            android:layout_toLeftOf="@+id/msg"
+	            />
+
+	            <ImageView
+	                android:id="@+id/msg_img"
+	                android:layout_width="40dp"
+	                android:layout_height="40dp"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true"
+	                android:background="@drawable/head1"
+	                android:clickable="true"
+	                android:contentDescription="@string/app_name" />
+	         
+	    </RelativeLayout>
+	    
+</LinearLayout>

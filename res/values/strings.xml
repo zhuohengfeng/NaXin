@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">纳信</string>
+    <string name="login">登录</string>
+    <string name="title_return">返回</string>
+    <string name="input_username">请输入新的纳信用户名</string>
+    <string name="input_password">请输入密码</string>
+    <string name="forget_passwd">忘记密码?</string>
+    <string name="chat_tab">会话</string>
+    <string name="address_tab">好友</string>
+    <string name="friends_tab">群聊</string>
+    <string name="setting_tab">设置</string>
+    <string name="exit">退出</string>
+    <string name="send">发送</string>
+    <string name="confirm">确定</string>
+    <string name="file_return">返回上一层</string>
+    <string name="no_found_SDcard">请插入SD卡</string>
+    <string name="input_message">请输入聊天内容</string>
+    <string name="login_name_empty">用户名不能为空</string>
+    <string name="press_send_audio">按住发送语音</string>
+    <string name="send_done">发送完毕</string>
+    <string name="recv_done">接收完毕</string>
+    <string name="connecting">连接中</string>
+    <string name="connected">已连接上：</string>
+    <string name="wait_connect">等待连接</string>
+    <string name="holdup">挂断</string>
+    <string name="handup">挂断</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/chat_relativeLayout"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_bar1" >
+        <TextView
+        	android:id="@+id/chat_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        		
+        <EditText
+            android:id="@+id/chat_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:hint="@string/input_message"
+            android:layout_weight="1" >
+           <requestFocus />
+        </EditText>
+
+		<Button
+	    android:background="@drawable/chat_send_bn_bg"
+        android:id="@+id/chat_send"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:text="@string/send" />
+        
+    </LinearLayout>
+
+    <ListView
+        android:stackFromBottom="true"    
+        android:transcriptMode="alwaysScroll" 
+        android:divider="@null"
+        android:scrollbarStyle="insideOverlay"
+        android:id="@+id/chat_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/chat_relativeLayout" 
+        android:layout_above="@+id/chat_LinearLayout" >
+    </ListView>
+
+</RelativeLayout>
